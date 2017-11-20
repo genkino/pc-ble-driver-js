@@ -6,9 +6,13 @@
 
 `pc-ble-driver` allows an nRF5 connectivity chip running Nordic's SoftDevice to be controlled via serial port ([BLE Serialization](https://infocenter.nordicsemi.com/index.jsp?topic=%2Fcom.nordic.infocenter.sdk5.v12.0.0%2Flib_serialization.html)) by an application - enabling the application with complete BLE functionality. `pc-ble-driver-js` is higher-level than `pc-ble-driver` and leans towards 'convention over configuration'. Getting started is quick and easy. This module may be useful for tasks ranging from automated BLE testing to [desktop applications](https://www.nordicsemi.com/eng/Products/Bluetooth-low-energy/nRF-Connect-for-desktop) and BLE gateways in production.
 
-## Installing
+## Installation
 
-Installing `pc-ble-driver-js` requires a bit more than the usual `$ npm install` because of it's C/C++ `pc-ble-driver` dependency. For detailed guidelines on building and installing `pc-ble-driver-js` and it's dependencies see [Installation.md](./Installation.md).
+This library depends on binary files, which have been precompiled for Node.js 6.x and 8.x, plus Electron 1.6. Users of these runtimes can install the library using:
+
+    $ npm install pc-ble-driver-js
+
+If npm is unable to find binaries for your platform/runtime, then it will attempt to build from source. In that case, some extra setup is required as described in [Installation.md](./Installation.md).
 
 ## Getting started
 
